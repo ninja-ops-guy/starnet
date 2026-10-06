@@ -2,7 +2,7 @@
 
 ## Supported versions
 
-Security fixes are made against the latest published StarNet release and the current default
+Security fixes are made against the latest published AeroTech Staff release and the current default
 branch. Older versions may be asked to update before a fix can be applied.
 
 ## Reporting a vulnerability
@@ -11,7 +11,7 @@ Please do not open a public issue, discussion, or pull request for a suspected v
 Use one of these private channels:
 
 1. GitHub's **Report a vulnerability** button on the repository Security tab, when available.
-2. Email **androo.agi@gmail.com** with the subject `StarNet security report`.
+2. Email **androo.agi@gmail.com** with the subject `AeroTech Staff security report`.
 
 Include the affected version or commit, reproduction steps, impact, and any suggested mitigation.
 Remove real credentials and personal data from screenshots, logs, and proof-of-concept files.
