@@ -1,4 +1,46 @@
-# Contributing to StarNet
+# Contributing to AeroTech Staff
+
+> This is a fork of [StarNet](https://github.com/androoAGI/starnet). All upstream
+> contribution guidelines are preserved below. The following addendum applies
+> specifically to AeroTech Staff.
+
+---
+
+## AeroTech Staff addendum
+
+### Asset replacement rule
+
+Every texture, sprite, sound, or brand asset committed to `frontend/assets/`,
+`src-tauri/icons/`, or `src-tauri/installer/` must have a corresponding entry in
+[`ASSET-MANIFEST.md`](ASSET-MANIFEST.md) before the PR is merged.
+
+Required per entry:
+- **Source path**: where the asset originated (e.g. `techops-hero/assets/campaign/...`)
+- **Source commit**: the exact commit SHA in the source repo
+- **SHA-256**: hash of the file as committed to this repo
+- **Status**: `pending` / `verified` / `generated` / `preserved`
+
+AI-generated assets must include a `.gen.md` sidecar with the exact prompt,
+seed, and model version used.
+
+Run `npm run asset-check` before submitting a PR that touches assets.
+
+### Rebrand script usage
+
+When making user-facing string changes, prefer the automated rebrand script
+over manual edits to avoid missing occurrences:
+
+```bash
+npm run rebrand -- --dry-run   # preview
+npm run rebrand                # apply
+```
+
+The script only touches user-facing strings (titles, labels, alt text) and
+deliberately skips code identifiers to minimize breakage.
+
+---
+
+# Contributing to StarNet (upstream guidelines — preserved)
 
 Thanks for helping improve StarNet. Bug fixes, tests, documentation, accessibility work, and
 carefully scoped features are welcome.
@@ -59,6 +101,7 @@ artifacts. Run `npm run security:secrets` before submitting if you have Gitleaks
 | `src-tauri/` | Desktop shell. |
 | `test/` | Test gates. |
 | `qa/` | Live verification and release receipts. |
+| `aerotech/` | **AeroTech Staff add-on:** RESIDUAL Command Station adapter. |
 
 Maintainers and automated coding agents working in the shared local integration environment
 follow an internal worktree protocol (local tooling, not part of this repository); external
