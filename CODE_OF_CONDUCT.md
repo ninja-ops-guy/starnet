@@ -1,6 +1,6 @@
 # Code of Conduct
 
-StarNet should be a welcoming place to build, learn, and disagree constructively.
+AeroTech Staff should be a welcoming place to build, learn, and disagree constructively.
 
 ## Expected behavior
 
@@ -23,4 +23,4 @@ people whose behavior violates this policy. Reports will be handled as privately
 retaliation against a reporter is itself a violation.
 
 This policy applies to repositories, issue trackers, reviews, community spaces, and public events
-where someone is representing StarNet.
+where someone is representing AeroTech Staff.
