@@ -1,4 +1,4 @@
-# StarNet v0.13.1
+# AeroTech Staff v0.13.1
 
 A repair update: web requests work again, group chats save and show who is in them, COMMS reads like a conversation, crew no longer freeze in the halls, each floor OUTBOX shows only its own line's work, schedules let you pick who they run as, and spending limits hold during retries.
 
@@ -11,7 +11,7 @@ A repair update: web requests work again, group chats save and show who is in th
 
 ### Group chats
 
-- **Adding an agent saves at once.** + ADD and REMOVE now save the moment you press them. Before, an add was only staged until a save key that could sit below the window's edge, so minimizing StarNet lost it. IN THIS CHAT lists only members the station has confirmed.
+- **Adding an agent saves at once.** + ADD and REMOVE now save the moment you press them. Before, an add was only staged until a save key that could sit below the window's edge, so minimizing AeroTech Staff lost it. IN THIS CHAT lists only members the station has confirmed.
 - **@ works in every chat.** Type @ in any chat to pick an agent from a menu over the message box (arrow keys, Enter or Tab to pick, Esc to close, @all in a group). Picking an agent who is not in the chat adds them first: a direct chat becomes a group, and from General a new group opens beside it.
 - **Names with spaces.** "@RESEARCHER 2" now reaches RESEARCHER 2, not RESEARCHER. A crew agent outside the chat is named as "not in this chat yet", and an unknown @name tells you how to send it as plain text.
 - **You can tell it is a group.** Group rows carry a [GROUP] tag, the COMMS header leads with [ GROUP ] and lists the members in their colour (past two lines, the rest fold into +N), and the transcript speaks the same conversation style as COMMS.
