@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-/* bin/starnet.js — StarNet from a terminal: `starnet -p "…"` runs one real agent task headlessly.
+/* bin/starnet.js — AeroTech Staff from a terminal: `starnet -p "…"` runs one real agent task headlessly.
 
    The desktop app is the station; this is the same station driven without the UI. Every decision lives in the
    pure core (./lib/cli-core.js); this file owns the ambient I/O only: argv/env, loopback sockets, the OS port
@@ -484,7 +484,7 @@ async function main() {
     if (path.resolve(ws) === path.resolve(desktop.workspace) && desktop.ownerAlive) { log('starnet: the desktop app is running on ' + ws + ' — nothing to bootstrap'); return 0; }
     const r = bootstrapWorkspace(ws, opts, process.env);
     if (!r.wrote) { log('starnet: ' + ws + ' — ' + r.reason); return 0; }
-    log('starnet: bootstrapped ' + ws + '\n  agent    ' + opts.name + ' (approvalMode full)\n  provider ' + (r.provider || 'openrouter (no credential found in the environment yet)') + (r.providerSource ? ' — from ' + r.providerSource : '') + '\n  model    ' + (r.model || '(none — pass --model or set STARNET_DEFAULT_MODEL)'));
+    log('starnet: bootstrapped ' + ws + '\n  agent    ' + opts.name + ' (full power)' + (r.provider ? ' · provider ' + r.provider + ' from ' + r.providerSource : ' · no provider credential found in the environment yet') + '\n  model    ' + (r.model || '(none — pass --model or set STARNET_DEFAULT_MODEL)'));
     return 0;
   }
 
